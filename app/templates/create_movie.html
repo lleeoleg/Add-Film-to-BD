@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="name" id="" placeholder="Name">
+        <br><br>
+        <select name="genre" id="">
+            <option value="hr">Хоррор</option>
+            <option value="ac">Экшн</option>
+            <option value="fa">Фантастика</option>
+            <option value="sc">Научный</option>
+        </select>
+        <br><br>
+        <input type="number" name="year" placeholder="Year">
+        <br><br>
+        <textarea name="description" id="">
+
+        </textarea>
+        <br><br>
+        <input type="text" name="duration" placeholder="Duration">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
